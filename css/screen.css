@@ -1,0 +1,248 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable*/
+
+/* ===== BASE STYLES ===== */
+
+html {
+  font-size: 1.125em;      /* 18px  1.125em @ 16px */
+  line-height: 1.222em;    /* 22px  1.222em @ 18px */
+  font-family: verdana, geneva, sans-serif;
+  padding: 1.222em 0.611em;  /* 22px 1.222em @ 18px, 11px 0.611em @ 18px */
+  background-color: #acccf1;
+  color: #486586;
+}
+h1 {
+  font-size: 1.728em;    /* 31.104px  1.728em @18px */
+  line-height: 1.222em ; /* 38px, 1.222em @31.104px */
+  padding-bottom: 0.354em;  /* 11px 0.354em @ 31.104px */
+}
+h2 {
+  font-size: 1.44em;       /*  25.92px, 1.44em @ 18px*/
+  line-height: 1.196em;    /* 31px 1.196em @25.92px */
+  padding-bottom: 0.424em; /* 11px 0.424em @25.92px */
+  font-style: italic;
+  color: #11253b;
+}
+header {
+  font-weight: bold;
+  font-style: italic;
+  background-color: #5f9cbb;
+  color: #f3f7f9;
+}
+
+nav {
+  font-size: 0.667em;  /* 12px  0.667em @ 18px */
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+p {
+  padding-bottom: 1.444em; /* 1.2 grid line 26px, 1.444em @ 18px */
+}
+video {
+  width: 80%;
+  padding-bottom: 0.611em; /* 11px, 0.611em @ 18px */
+}
+footer {
+  font-size: 0.579em;  /* 10.417px 0.579em @ 18px*/
+  line-height: 1.44em;  /* 15px 1.440em @ 10.417px  */
+  background-color: #C4A79F;
+  text-align: center;
+  padding: 1em; /* 10.417px 1em @ 10.417px */
+  border-radius: 0.48em;  /* 5px 0.48em @ 10.417px */
+}
+h2 a {
+  font-size: 0.482em; /* 12.5px 0.482em @ 25.92px */
+}
+figcaption {
+  font-size: 0.694em;      /* 12.5px  0.694em @ 18px */
+  padding-bottom: 0.611em; /* 11px, 0.611em @ 18px */
+  color: #84059f;
+}
+.h-card {
+  font-size: 0.889em;      /* 16px 0.889em @ 18px*/
+  padding-bottom: 0.611em; /* 11px 0.611em @ 18px */
+}
+.p-skill {
+  padding-bottom: 0.611em; /* 11px 0.611em @ 18px */
+}
+.introduction, .gallery {
+  margin-bottom: 0.611em; /* 11px 0.611em @ 18px */
+}
+.p-picture {
+  margin-bottom: 0.611em; /* 11px 0.611em @ 18px */
+}
+.p-contact {
+  margin-bottom: 0.611em; /* 11px 0.611em @ 18px */
+}
+.p-education {
+  margin-bottom: 0.611em; /* 11px 0.611em @ 18px */
+}
+/* ===== LAYOUT STYLES ===== */
+
+nav  li {
+  display: inline;
+  padding: 0.417em;  /* 5px 0.417em @ 12px */
+}
+nav a {
+  text-decoration: none;
+}
+.p-skill li, .p-education li {
+  list-style-type: disc;
+  padding-left: 0.611em;  /* 11px 0.611em @ 18px */
+  list-style-position: inside;
+}
+.p-experience ul {
+  padding-left: 0.611em;  /* 11px 0.611em @ 18px */
+}
+.exp-list, .edu-list {
+  padding-bottom: 0.611em; /* 11px 0.611em @ 18px */
+}
+.exp-list li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.exp-title {
+  font-weight: bold;
+}
+.exp-comp, .edu-school {
+  font-style: italic;
+  padding: 0.333em;       /* 6px 0.333em @ 18px */
+  margin-bottom: 0.333em; /* 6px 0.333em @ 18px */
+  font-weight: bold;
+  color: #175348;
+}
+.gallery figure {
+  display: inline-block;
+  width: -moz-min-content;
+  width: -webkit-min-content;
+  width: min-content; 
+  vertical-align: top;
+  padding-bottom: 0.333em; /* 6px 0.333em @ 18px */
+  margin-bottom: 0.333em;  /* 6px 0.333em @ 18px */
+}
+.gallery  img {
+  width: 150px;
+  height: 150px;
+}
+.p-picture, .p-picture img {
+  width: 80vw;
+  height: auto;
+}
+.p-picture, .p-contact, .p-summary, .p-skill, .p-experience, .p-education {
+  float: left;
+}
+/* ===== MODULAR STYLES ===== */
+.header {
+  padding: 0.611em 0.333em; /* 11px 0.611em @ 18px,   6px 0.333em @6px */
+  margin-bottom: 0.611em;   /* 11px 0.611em @ 18px */
+}
+.main:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+/* ===== STATE STYLES ===== */
+/* 500px 31.25em @ 16px */
+@media screen and (min-width: 31.25em) {
+  /* For screen width greater than 500px */
+  .p-picture, .p-picture  img {
+    width: 40vw;  /* 3 col of 7, 214.275-22=192.275px */
+    height: auto;
+    float: left;
+    margin-bottom: 0.611em; /* 11px 0.611em @ 18px  */
+  }
+  .p-contact {
+    width: 40vw;  /* 3 col of 7, 214.275-22=192.275px */
+    height: auto;
+    float: right;
+    margin-top: 3.056em; /* 55px, 3.056em @ 18px */
+  }
+  .p-summary {
+    clear: both;
+  }
+  footer {
+    clear: both;
+  }
+}
+/* For screen width greater than 700px */
+/*700px 43.75em @ 16px */
+@media screen and (min-width: 43.75em) {
+  .p-summary h2 {
+    padding-left: 0;
+  }
+  .p-picture, .p-picture  img {
+    width: 40vw;   /* 3 col of 7, 300-22=278px */
+    height: auto;
+    float: left;
+  }
+  .resume-con-pro {
+    width: 50vw;  /* 4 col of 7  400-22=378px */
+    float: left;
+  }
+  .p-contact {
+    float: left;
+    margin-top: 0;
+    margin-left: 0.611em;     /* 11px 0.611em @ 18px */
+    margin-bottom: 1.222em;   /* 22px  1.222em @ 18px */
+  }
+  .p-summary {
+    margin-left: 0.611em;  /* 11px 0.611em @ 18px */
+  }
+  .p-education h3 {
+    padding-left: 0;
+  }
+  .p-skill {
+    clear: both;
+  }
+  .p-skill, .p-education {
+    width: 25vw;   /* 2 col of 7, 200-22=178px */
+    float: left;
+    padding-left: 0;
+  }
+  .p-experience h2 {
+    padding-left: 0.611em; /* 11px 0.611em @ 18px  */
+  }
+  .p-experience {
+    width: 65vw; /* 5 col of 7, 500-22=478px */
+    float: right;
+    border-left-style: double;
+    border-left-width: 0.1667em;  /* 3px, 0.1667em @ 18px */
+    border-left-color: #7879be;
+  }
+  #habit-main {
+    width: 100vw;
+    border: 1px solid black;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+  }
+  #habit-main intro-box {
+    /*background-color: grid; */
+    order: 1;
+  }
+  #habit-main gallery-box {
+    order: 2;
+  }
+  #habit-main  introduction {
+    background-color: grid;
+    width: 30vw;
+    margin: 15px;
+    padding: 5px;
+  }
+  #gallery-box {
+    margin-left: 20px;
+    margin-right: 10px;
+    padding: 15px;
+    border: 1px solid red;
+  }
+  footer {
+    clear: both;
+    margin-top: 1.222em;   /* 22px  1.222em @ 18px */
+  }
+}
+

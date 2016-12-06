@@ -121,14 +121,14 @@ nav a {
   display: inline-block;
   width: -moz-min-content;
   width: -webkit-min-content;
-  width: min-content; 
+  width: min-content;
   vertical-align: top;
   padding-bottom: 0.333em; /* 6px 0.333em @ 18px */
   margin-bottom: 0.333em;  /* 6px 0.333em @ 18px */
 }
 .gallery  img {
-  width: 150px;
-  height: 150px;
+  width: 8.333em;   /* 150px 8.333em @ 18px */
+  height: 8.333em;   /* 150px 8.333em @ 18px */
 }
 .p-picture, .p-picture img {
   width: 80vw;
@@ -217,29 +217,41 @@ nav a {
   }
   #habit-main {
     width: 100vw;
-   /* border: 1px solid black; */
     display: -webkit-flex; /* Safari */
     display: flex;
   }
   #intro-box {
-    /*background-color: grid; */
     order: 1;
     flex: 1;
     background-color: #5f9cbb;
-    margin: 10px;
+    margin: 0.556em;  /* 10px 0.556em @ 18px */
   }
   #gallery-box {
     order: 2;
     flex: 2;
   }
-  #intro-box h2,p {
-    padding: 6px;
+  #intro-box h2, p {
+    padding: 0.333em;  /* 6px 0.333em @ 18px */
   }
   #gallery-box {
-    margin-left: 20px;
-    margin-right: 10px;
-    padding: 15px;
-   /* border: 1px solid red; */
+    margin-left: 1.111em;  /* 20px 1.111em @ 18px */
+    margin-right: 0.556em; /* 10px 0.556em @18px */
+    padding: 0.833em;  /* 15px 0.833em @ 18px */
+  }
+  #large-img-hdr  img {
+    width: 80%;
+    height: auto;
+  }
+  #thumbnail-img-hdr img {
+    transition: border-radius 0.3s;
+  }
+  #thumbnail-img-hdr img:hover {
+    border-radius: 5.556em; /* 100px 5.556em @ 18px */
+    cursor: pointer;
+  }
+  #click-for-view {
+    font-size: 0.556em; /* 10px 0.556em @18px */
+    color: #13B557;
   }
   footer {
     clear: both;
